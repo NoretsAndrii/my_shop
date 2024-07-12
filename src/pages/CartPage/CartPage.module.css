@@ -1,5 +1,6 @@
 .wrapper {
   background-image: linear-gradient(
+    to bottom left,
     rgba(204, 205, 220, 0.7),
     rgba(46, 47, 66, 0.7)
   );
