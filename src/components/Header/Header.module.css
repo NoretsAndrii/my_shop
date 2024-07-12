@@ -3,7 +3,6 @@
   color: white;
   padding: 12px 24px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   position: fixed;
   width: 100%;
@@ -22,6 +21,7 @@
   color: white;
   transition: color 250ms linear;
   transition: transform 150ms linear;
+  font-size: 20px;
 }
 
 .link:hover {
@@ -34,6 +34,23 @@
 }
 
 .cart {
+  position: relative;
   margin-left: auto;
   cursor: pointer;
+}
+
+.total {
+  border-radius: 50%;
+  background-color: yellow;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 0;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
 }

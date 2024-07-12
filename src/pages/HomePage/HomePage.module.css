@@ -5,4 +5,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.link {
+  display: block;
+  background-color: rgb(114, 116, 126);
+  color: white;
+  border: 0px solid transparent;
+  border-radius: 8px;
+  padding: 16px 16px;
+  transition: background-color 250ms linear;
+  width: 300px;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.link:hover,
+.link:focus {
+  background-color: rgb(86, 87, 96);
 }

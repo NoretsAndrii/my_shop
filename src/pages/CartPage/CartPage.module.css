@@ -1,0 +1,46 @@
+.wrapper {
+  background-image: linear-gradient(
+    rgba(204, 205, 220, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
+  padding: 88px 32px 32px;
+  min-height: 100vh;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.total_box {
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+}
+
+.text {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.button {
+  background-color: rgb(143, 145, 158);
+  color: white;
+  border: 0px solid transparent;
+  border-radius: 8px;
+  padding: 16px 16px;
+  transition: background-color 250ms linear;
+  width: 100%;
+  font-size: 24px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(86, 87, 96);
+}

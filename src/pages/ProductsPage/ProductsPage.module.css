@@ -3,7 +3,8 @@
     rgba(204, 205, 220, 0.7),
     rgba(46, 47, 66, 0.7)
   );
-  padding: 64px 32px;
+  padding: 88px 32px 32px;
+  min-height: 100vh;
 }
 
 .list {

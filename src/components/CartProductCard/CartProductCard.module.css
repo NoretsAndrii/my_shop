@@ -1,0 +1,49 @@
+.card {
+  width: 500px;
+  display: flex;
+  /* align-items: center; */
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 24px;
+  position: relative;
+}
+
+.image {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+  margin-right: 24px;
+}
+
+.info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.button {
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+.sum {
+  align-self: flex-end;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  background-color: transparent;
+  border: 0px solid transparent;
+}

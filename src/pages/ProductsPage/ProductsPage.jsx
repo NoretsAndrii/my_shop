@@ -1,22 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import css from "./ProductsPage.module.css";
-import axios from "axios";
 import ProductCard from "../../components/ProductCard/ProductCard";
-import { useDispatch } from "react-redux";
-import { fetchProductss } from "../../redux/products/productsOps";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "../../redux/products/productsOps";
+import { selectProducts } from "../../redux/products/productsSlise";
 
 export default function ProductsPage() {
+  const products = useSelector(selectProducts);
   const dispatch = useDispatch();
 
-  // const [products, setProducts] = useState([]);
   useEffect(() => {
-    // const fetchData = async () => {
-    //   const response = await axios.get("https://fakestoreapi.com/products");
-    //   setProducts(response.data);
-    // };
-    // fetchData();
-    dispatch(fetchProductss());
-  }, []);
+    dispatch(fetchProducts());
+  }, [dispatch]);
 
   return (
     <div className={css.wrapper}>

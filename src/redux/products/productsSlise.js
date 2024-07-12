@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchProducts } from "./productsOps";
 
-const handlePending = (state) => {
+const handlePending = () => {
   //   state.loading = true;
 };
 
-const handleRejected = (state, action) => {
+const handleRejected = () => {
   //   state.loading = false;
   //   state.error = action.payload;
 };
@@ -27,4 +27,4 @@ const productsSlise = createSlice({
 
 export const productsReducer = productsSlise.reducer;
 
-export const selectProduct = (state) => state.products.items;
+export const selectProducts = (state) => state.products.items;
