@@ -7,6 +7,19 @@
   min-height: 100vh;
 }
 
+.search {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 16px;
+  background-color: rgba(143, 145, 158, 0.7);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .list {
   max-width: 1140px;
   margin-left: auto;

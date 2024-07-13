@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import css from "./ProductCard.module.css";
 import { addProduct } from "../../redux/cart/cartSlice";
+import { Link } from "react-router-dom";
 
 export default function ProductCard({ product }) {
   const dispatch = useDispatch();
@@ -11,7 +12,9 @@ export default function ProductCard({ product }) {
 
   return (
     <div className={css.card_box}>
-      <img className={css.image} src={product.image} alt="" />
+      <Link to={`/products/${product.id}`}>
+        <img className={css.image} src={product.image} alt="" />
+      </Link>
       <p className={css.title}>{product.title}</p>
       <div className={css.price_box}>
         <p>Price: {product.price}</p>

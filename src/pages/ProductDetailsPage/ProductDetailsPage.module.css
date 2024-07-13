@@ -1,0 +1,87 @@
+.wrapper {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(204, 205, 220, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
+  padding: 88px 32px 32px;
+  min-height: 100vh;
+}
+
+.link {
+  width: max-content;
+  background-color: rgb(128, 129, 140);
+  color: white;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 250ms linear;
+  margin-bottom: 24px;
+}
+
+.link:hover,
+.link:focus {
+  background-color: rgb(86, 87, 96);
+}
+
+.button {
+  background-color: rgb(143, 145, 158);
+  color: white;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: background-color 250ms linear;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(86, 87, 96);
+}
+
+.card {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.div {
+  margin-right: 16px;
+  width: 30%;
+}
+
+.image {
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.description_box {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.description {
+  margin-bottom: 16px;
+}

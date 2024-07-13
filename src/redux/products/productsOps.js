@@ -13,3 +13,17 @@ export const fetchProducts = createAsyncThunk(
     }
   }
 );
+
+export const fetchProductById = createAsyncThunk(
+  "products/fetchOnById",
+  async (id, thunkAPI) => {
+    try {
+      const response = await axios.get(
+        `https://fakestoreapi.com/products/${id}`
+      );
+      return response.data;
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e.message);
+    }
+  }
+);
