@@ -42,7 +42,7 @@
 }
 
 .card {
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -67,6 +67,8 @@
 
 .image {
   margin-bottom: 16px;
+  max-height: 300px;
+  object-fit: contain;
 }
 
 .price {
