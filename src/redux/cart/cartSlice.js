@@ -32,12 +32,15 @@ const cartSlise = createSlice({
       const index = state.items.findIndex((item) => item.id === action.payload);
       state.items.splice(index, 1);
     },
+    clerarCart(state) {
+      state.items = [];
+    },
   },
 });
 
 export const cartReducer = cartSlise.reducer;
 
-export const { addProduct, changeAmountProduct, deleteProduct } =
+export const { addProduct, changeAmountProduct, deleteProduct, clerarCart } =
   cartSlise.actions;
 
 export const selectCart = (state) => state.cart.items;

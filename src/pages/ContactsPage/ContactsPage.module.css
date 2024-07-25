@@ -1,0 +1,19 @@
+.wrapper {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(204, 205, 220, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
+  padding: 88px 32px 32px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.link {
+  color: white;
+  font-size: 32px;
+}
